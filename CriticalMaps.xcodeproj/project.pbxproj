@@ -70,7 +70,6 @@
 		949BD4B223CB4BEB00EA7BA4 /* CHANGELOG.md in Resources */ = {isa = PBXBuildFile; fileRef = 949BD4B023CB4BEB00EA7BA4 /* CHANGELOG.md */; };
 		949BD4B323CB4BEB00EA7BA4 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 949BD4B123CB4BEB00EA7BA4 /* README.md */; };
 		949BEF552237CAEC009AE6DF /* RoundableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949BEF542237CAEC009AE6DF /* RoundableImageView.swift */; };
-		949CFB7323D4800800C15BD5 /* UseAutolayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949CFB7223D4800800C15BD5 /* UseAutolayout.swift */; };
 		94A58B2723D458180052794B /* MapInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A58B2623D458180052794B /* MapInfoViewController.swift */; };
 		94A95EB32287F81100FD5FDB /* NoContentMessageLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A95EB22287F81100FD5FDB /* NoContentMessageLabel.swift */; };
 		94AF22FA23D4B13100267E87 /* MapInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94AF22F923D4B13100267E87 /* MapInfoView.xib */; };
@@ -289,7 +288,6 @@
 		949BD4B023CB4BEB00EA7BA4 /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
 		949BD4B123CB4BEB00EA7BA4 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		949BEF542237CAEC009AE6DF /* RoundableImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundableImageView.swift; sourceTree = "<group>"; };
-		949CFB7223D4800800C15BD5 /* UseAutolayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseAutolayout.swift; sourceTree = "<group>"; };
 		94A58B2623D458180052794B /* MapInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapInfoViewController.swift; sourceTree = "<group>"; };
 		94A95EB22287F81100FD5FDB /* NoContentMessageLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoContentMessageLabel.swift; sourceTree = "<group>"; };
 		94AF22F923D4B13100267E87 /* MapInfoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapInfoView.xib; sourceTree = "<group>"; };
@@ -526,7 +524,6 @@
 			isa = PBXGroup;
 			children = (
 				94AF230523D59E9500267E87 /* Extensions */,
-				949CFB7123D47FF400C15BD5 /* PropertyWrapper */,
 				21859FAD2352B6AA00B942AA /* AsyncOperation.swift */,
 				3F997954239D9DD5006DB96B /* Feature.swift */,
 				94D4016E229F20F6001524CC /* FontMetrics.swift */,
@@ -613,19 +610,9 @@
 			isa = PBXGroup;
 			children = (
 				949BD4AE23CB481200EA7BA4 /* CriticalMassInApiHandler.swift */,
-				94A58B2623D458180052794B /* MapInfoViewController.swift */,
-				94AF22FF23D4CB1C00267E87 /* MapInfoViewController.xib */,
 				94AF230123D4EA6000267E87 /* CMAnnotationView.swift */,
 			);
 			name = Events;
-			sourceTree = "<group>";
-		};
-		949CFB7123D47FF400C15BD5 /* PropertyWrapper */ = {
-			isa = PBXGroup;
-			children = (
-				949CFB7223D4800800C15BD5 /* UseAutolayout.swift */,
-			);
-			name = PropertyWrapper;
 			sourceTree = "<group>";
 		};
 		94AD50471A963D1600547B40 /* Model */ = {
@@ -864,6 +851,8 @@
 		9841B475237E9229000A4922 /* Map */ = {
 			isa = PBXGroup;
 			children = (
+				94A58B2623D458180052794B /* MapInfoViewController.swift */,
+				94AF22FF23D4CB1C00267E87 /* MapInfoViewController.xib */,
 				9822A16721F24CA7007F5994 /* MapViewController.swift */,
 				9853B510237E101300F46AB6 /* BikeAnnotationController.swift */,
 				9841B476237E9239000A4922 /* AnnotationController.swift */,
@@ -1220,7 +1209,6 @@
 				948509A322C09F9A0034FAF1 /* UIViewController+Management.swift in Sources */,
 				985E94B9220796CB00AA991B /* NavigationOverlayViewController.swift in Sources */,
 				9823712623781D53009D6F05 /* SimulationNetworkDataProvider.swift in Sources */,
-				949CFB7323D4800800C15BD5 /* UseAutolayout.swift in Sources */,
 				946D71CD23C9C7FF0094D71B /* Ride.swift in Sources */,
 				94FCBD28226C57CA00F93F94 /* UITableViewController+FooterSize.swift in Sources */,
 				9853B511237E101300F46AB6 /* BikeAnnotationController.swift in Sources */,
