@@ -77,6 +77,7 @@
 		94AF230023D4CB1C00267E87 /* MapInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94AF22FF23D4CB1C00267E87 /* MapInfoViewController.xib */; };
 		94AF230223D4EA6000267E87 /* CMAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AF230123D4EA6000267E87 /* CMAnnotationView.swift */; };
 		94AF230423D59BC900267E87 /* PassthroughView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AF230323D59BC900267E87 /* PassthroughView.swift */; };
+		94AF230723D59EA300267E87 /* Sequence+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AF230623D59EA300267E87 /* Sequence+Additions.swift */; };
 		94CF086019BDEAF2009FFF43 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94CF085F19BDEAF2009FFF43 /* Foundation.framework */; };
 		94CF086219BDEAF2009FFF43 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94CF086119BDEAF2009FFF43 /* CoreGraphics.framework */; };
 		94CF086419BDEAF2009FFF43 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94CF086319BDEAF2009FFF43 /* UIKit.framework */; };
@@ -295,6 +296,7 @@
 		94AF22FF23D4CB1C00267E87 /* MapInfoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapInfoViewController.xib; sourceTree = "<group>"; };
 		94AF230123D4EA6000267E87 /* CMAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMAnnotationView.swift; sourceTree = "<group>"; };
 		94AF230323D59BC900267E87 /* PassthroughView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassthroughView.swift; sourceTree = "<group>"; };
+		94AF230623D59EA300267E87 /* Sequence+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence+Additions.swift"; sourceTree = "<group>"; };
 		94CF085C19BDEAF2009FFF43 /* CriticalMaps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CriticalMaps.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94CF085F19BDEAF2009FFF43 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		94CF086119BDEAF2009FFF43 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -523,6 +525,7 @@
 		9460B769225A6E9B00786E27 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				94AF230523D59E9500267E87 /* Extensions */,
 				949CFB7123D47FF400C15BD5 /* PropertyWrapper */,
 				21859FAD2352B6AA00B942AA /* AsyncOperation.swift */,
 				3F997954239D9DD5006DB96B /* Feature.swift */,
@@ -715,6 +718,14 @@
 				98205F682207937100122EDA /* AppController.swift */,
 			);
 			name = Root;
+			sourceTree = "<group>";
+		};
+		94AF230523D59E9500267E87 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				94AF230623D59EA300267E87 /* Sequence+Additions.swift */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 		94CF085319BDEAF2009FFF43 = {
@@ -1314,6 +1325,7 @@
 				982DA8D121FF9F9100E2A51B /* TwitterApiResponse.swift in Sources */,
 				945CAF9B230BD7F200E8B7E8 /* Endpoint.swift in Sources */,
 				21859FAE2352B6AA00B942AA /* AsyncOperation.swift in Sources */,
+				94AF230723D59EA300267E87 /* Sequence+Additions.swift in Sources */,
 				9822A15221EDF1C5007F5994 /* DataStore.swift in Sources */,
 				98329A1D22D3796300A157EE /* CriticalMaps.xcdatamodeld in Sources */,
 				9844438123429354005468B2 /* UIView+Autolayout.swift in Sources */,
