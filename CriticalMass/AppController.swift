@@ -57,7 +57,7 @@ class AppController {
         let rootViewController = MapViewController(
             themeController: self.themeController,
             friendsVerificationController: FriendsVerificationController(dataStore: dataStore),
-            nextRideHandler: CMInApiHandler(networkLayer: networkOperator)
+            nextRideAPIHandler: CMInApiHandler(networkLayer: networkOperator)
         )
         let navigationOverlay = NavigationOverlayViewController(navigationItems: [
             .init(representation: .view(rootViewController.followMeButton),
