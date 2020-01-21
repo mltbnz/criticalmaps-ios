@@ -50,7 +50,7 @@
 		9460B76B225A6EB200786E27 /* FormatDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9460B76A225A6EB200786E27 /* FormatDisplay.swift */; };
 		946CDE0422412DA60059F892 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 946CDE0322412DA60059F892 /* Settings.bundle */; };
 		946D71CD23C9C7FF0094D71B /* Ride.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946D71CC23C9C7FF0094D71B /* Ride.swift */; };
-		946D71CF23C9CB7E0094D71B /* NextRideRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946D71CE23C9CB7E0094D71B /* NextRideRequest.swift */; };
+		946D71CF23C9CB7E0094D71B /* NextRidesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946D71CE23C9CB7E0094D71B /* NextRidesRequest.swift */; };
 		9474E976224CF58100A812DC /* SettingsFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9474E975224CF58100A812DC /* SettingsFooterView.swift */; };
 		9474E978224CF60500A812DC /* SettingsFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9474E977224CF60500A812DC /* SettingsFooterView.xib */; };
 		9474E97A224D027900A812DC /* Bundle+Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9474E979224D027900A812DC /* Bundle+Version.swift */; };
@@ -77,6 +77,7 @@
 		94AF230223D4EA6000267E87 /* CMAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AF230123D4EA6000267E87 /* CMAnnotationView.swift */; };
 		94AF230423D59BC900267E87 /* PassthroughView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AF230323D59BC900267E87 /* PassthroughView.swift */; };
 		94AF230723D59EA300267E87 /* Sequence+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AF230623D59EA300267E87 /* Sequence+Additions.swift */; };
+		94AF230B23D70DA600267E87 /* NextRideManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AF230A23D70DA600267E87 /* NextRideManager.swift */; };
 		94CF086019BDEAF2009FFF43 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94CF085F19BDEAF2009FFF43 /* Foundation.framework */; };
 		94CF086219BDEAF2009FFF43 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94CF086119BDEAF2009FFF43 /* CoreGraphics.framework */; };
 		94CF086419BDEAF2009FFF43 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94CF086319BDEAF2009FFF43 /* UIKit.framework */; };
@@ -260,7 +261,7 @@
 		9460B76A225A6EB200786E27 /* FormatDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatDisplay.swift; sourceTree = "<group>"; };
 		946CDE0322412DA60059F892 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = SOURCE_ROOT; };
 		946D71CC23C9C7FF0094D71B /* Ride.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ride.swift; sourceTree = "<group>"; };
-		946D71CE23C9CB7E0094D71B /* NextRideRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextRideRequest.swift; sourceTree = "<group>"; };
+		946D71CE23C9CB7E0094D71B /* NextRidesRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextRidesRequest.swift; sourceTree = "<group>"; };
 		9474E975224CF58100A812DC /* SettingsFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsFooterView.swift; sourceTree = "<group>"; };
 		9474E977224CF60500A812DC /* SettingsFooterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsFooterView.xib; sourceTree = "<group>"; };
 		9474E979224D027900A812DC /* Bundle+Version.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Version.swift"; sourceTree = "<group>"; };
@@ -295,6 +296,7 @@
 		94AF230123D4EA6000267E87 /* CMAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMAnnotationView.swift; sourceTree = "<group>"; };
 		94AF230323D59BC900267E87 /* PassthroughView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassthroughView.swift; sourceTree = "<group>"; };
 		94AF230623D59EA300267E87 /* Sequence+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence+Additions.swift"; sourceTree = "<group>"; };
+		94AF230A23D70DA600267E87 /* NextRideManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextRideManager.swift; sourceTree = "<group>"; };
 		94CF085C19BDEAF2009FFF43 /* CriticalMaps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CriticalMaps.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94CF085F19BDEAF2009FFF43 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		94CF086119BDEAF2009FFF43 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -599,7 +601,7 @@
 				9491720C23009EB3008B98AD /* APIRequest.swift */,
 				945CAF9A230BD7F200E8B7E8 /* Endpoint.swift */,
 				945CAF9C230BD83800E8B7E8 /* HTTPHeaders.swift */,
-				946D71CE23C9CB7E0094D71B /* NextRideRequest.swift */,
+				946D71CE23C9CB7E0094D71B /* NextRidesRequest.swift */,
 				940643D52307266700AB1BCB /* PostLocationAndChatMessagesRequest.swift */,
 				9491720E23009ED0008B98AD /* TwitterRequest.swift */,
 			);
@@ -611,6 +613,7 @@
 			children = (
 				949BD4AE23CB481200EA7BA4 /* CriticalMassInApiHandler.swift */,
 				94AF230123D4EA6000267E87 /* CMAnnotationView.swift */,
+				94AF230A23D70DA600267E87 /* NextRideManager.swift */,
 			);
 			name = Events;
 			sourceTree = "<group>";
@@ -1274,6 +1277,7 @@
 				3F997955239D9DD5006DB96B /* Feature.swift in Sources */,
 				94FCBD2C226C57CA00F93F94 /* UIApplication+Appearance.swift in Sources */,
 				21859FB22352CBD300B942AA /* WaitOperation.swift in Sources */,
+				94AF230B23D70DA600267E87 /* NextRideManager.swift in Sources */,
 				989F9FFB21C7F9AB00E71085 /* RuleTableViewCell.swift in Sources */,
 				949BD4AF23CB481200EA7BA4 /* CriticalMassInApiHandler.swift in Sources */,
 				9485A93523756A53006DC7B5 /* LoadingViewController.swift in Sources */,
@@ -1298,7 +1302,7 @@
 				987C57AD23A941A60060499B /* CALayer+Shadow.swift in Sources */,
 				987C57AA23A4EB290060499B /* BlurryFullscreenOverlayView.swift in Sources */,
 				94AF230423D59BC900267E87 /* PassthroughView.swift in Sources */,
-				946D71CF23C9CB7E0094D71B /* NextRideRequest.swift in Sources */,
+				946D71CF23C9CB7E0094D71B /* NextRidesRequest.swift in Sources */,
 				940643D62307266700AB1BCB /* PostLocationAndChatMessagesRequest.swift in Sources */,
 				210367BC237AAE2F001F2A84 /* PathObserver.swift in Sources */,
 				989FA00221C8038400E71085 /* Location.swift in Sources */,
