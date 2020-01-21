@@ -78,6 +78,7 @@
 		94AF230423D59BC900267E87 /* PassthroughView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AF230323D59BC900267E87 /* PassthroughView.swift */; };
 		94AF230723D59EA300267E87 /* Sequence+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AF230623D59EA300267E87 /* Sequence+Additions.swift */; };
 		94AF230B23D70DA600267E87 /* NextRideManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AF230A23D70DA600267E87 /* NextRideManager.swift */; };
+		94AF230D23D7160600267E87 /* CriticalMassAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AF230C23D7160600267E87 /* CriticalMassAnnotation.swift */; };
 		94CF086019BDEAF2009FFF43 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94CF085F19BDEAF2009FFF43 /* Foundation.framework */; };
 		94CF086219BDEAF2009FFF43 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94CF086119BDEAF2009FFF43 /* CoreGraphics.framework */; };
 		94CF086419BDEAF2009FFF43 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94CF086319BDEAF2009FFF43 /* UIKit.framework */; };
@@ -297,6 +298,7 @@
 		94AF230323D59BC900267E87 /* PassthroughView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassthroughView.swift; sourceTree = "<group>"; };
 		94AF230623D59EA300267E87 /* Sequence+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence+Additions.swift"; sourceTree = "<group>"; };
 		94AF230A23D70DA600267E87 /* NextRideManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextRideManager.swift; sourceTree = "<group>"; };
+		94AF230C23D7160600267E87 /* CriticalMassAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CriticalMassAnnotation.swift; sourceTree = "<group>"; };
 		94CF085C19BDEAF2009FFF43 /* CriticalMaps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CriticalMaps.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94CF085F19BDEAF2009FFF43 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		94CF086119BDEAF2009FFF43 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -611,8 +613,9 @@
 		949BD4AD23CB471A00EA7BA4 /* Events */ = {
 			isa = PBXGroup;
 			children = (
-				949BD4AE23CB481200EA7BA4 /* CriticalMassInApiHandler.swift */,
 				94AF230123D4EA6000267E87 /* CMAnnotationView.swift */,
+				94AF230C23D7160600267E87 /* CriticalMassAnnotation.swift */,
+				949BD4AE23CB481200EA7BA4 /* CriticalMassInApiHandler.swift */,
 				94AF230A23D70DA600267E87 /* NextRideManager.swift */,
 			);
 			name = Events;
@@ -1211,6 +1214,7 @@
 				98C4BEA12218518B0060E701 /* UserTrackingButton.swift in Sources */,
 				948509A322C09F9A0034FAF1 /* UIViewController+Management.swift in Sources */,
 				985E94B9220796CB00AA991B /* NavigationOverlayViewController.swift in Sources */,
+				94AF230D23D7160600267E87 /* CriticalMassAnnotation.swift in Sources */,
 				9823712623781D53009D6F05 /* SimulationNetworkDataProvider.swift in Sources */,
 				946D71CD23C9C7FF0094D71B /* Ride.swift in Sources */,
 				94FCBD28226C57CA00F93F94 /* UITableViewController+FooterSize.swift in Sources */,
