@@ -78,6 +78,7 @@
 		94AF230423D59BC900267E87 /* PassthroughView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AF230323D59BC900267E87 /* PassthroughView.swift */; };
 		94AF230B23D70DA600267E87 /* NextRideManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AF230A23D70DA600267E87 /* NextRideManager.swift */; };
 		94AF230D23D7160600267E87 /* CriticalMassAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AF230C23D7160600267E87 /* CriticalMassAnnotation.swift */; };
+		94AF230F23D724D900267E87 /* NextRideManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AF230E23D724D900267E87 /* NextRideManagerTests.swift */; };
 		94CF086019BDEAF2009FFF43 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94CF085F19BDEAF2009FFF43 /* Foundation.framework */; };
 		94CF086219BDEAF2009FFF43 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94CF086119BDEAF2009FFF43 /* CoreGraphics.framework */; };
 		94CF086419BDEAF2009FFF43 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94CF086319BDEAF2009FFF43 /* UIKit.framework */; };
@@ -297,6 +298,7 @@
 		94AF230323D59BC900267E87 /* PassthroughView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassthroughView.swift; sourceTree = "<group>"; };
 		94AF230A23D70DA600267E87 /* NextRideManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextRideManager.swift; sourceTree = "<group>"; };
 		94AF230C23D7160600267E87 /* CriticalMassAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CriticalMassAnnotation.swift; sourceTree = "<group>"; };
+		94AF230E23D724D900267E87 /* NextRideManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextRideManagerTests.swift; sourceTree = "<group>"; };
 		94CF085C19BDEAF2009FFF43 /* CriticalMaps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CriticalMaps.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94CF085F19BDEAF2009FFF43 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		94CF086119BDEAF2009FFF43 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -779,21 +781,22 @@
 		94CF087E19BDEAF2009FFF43 /* CriticalMassTests */ = {
 			isa = PBXGroup;
 			children = (
-				98003D5F2287301000592D55 /* FollowURLObjectTests.swift */,
-				943ABD9422781F0200B7F07C /* ThemeControllerTests.swift */,
-				943ABD9322781F0200B7F07C /* ThemeStoreTests.swift */,
-				94CF087F19BDEAF2009FFF43 /* Supporting Files */,
-				9822A15621EE0956007F5994 /* RuleTests.swift */,
-				9822A16321F113DC007F5994 /* RequestManagerTests.swift */,
 				9822A16521F11519007F5994 /* AppDataStoreTests.swift */,
 				9804178F21FCA2B40077D419 /* ChatManagerTests.swift */,
-				982DA8D521FFAC0D00E2A51B /* TwitterManagerTests.swift */,
-				98C13289227F05E700291FCA /* IDStoreTests.swift */,
-				981C92082288B47F00391FA9 /* TestHelper.swift */,
+				98003D5F2287301000592D55 /* FollowURLObjectTests.swift */,
 				98ED2FDC22919BDD007F8A92 /* FriendsVerificationControllerTests.swift */,
+				98C13289227F05E700291FCA /* IDStoreTests.swift */,
 				98329A2222D3CADB00A157EE /* KeychainHelperTests.swift */,
-				9810C383229831720011F718 /* RatingHelperTests.swift */,
 				9843FAA2236CDC0D00457930 /* NetworkOperatorTests.swift */,
+				94AF230E23D724D900267E87 /* NextRideManagerTests.swift */,
+				9810C383229831720011F718 /* RatingHelperTests.swift */,
+				9822A16321F113DC007F5994 /* RequestManagerTests.swift */,
+				9822A15621EE0956007F5994 /* RuleTests.swift */,
+				94CF087F19BDEAF2009FFF43 /* Supporting Files */,
+				981C92082288B47F00391FA9 /* TestHelper.swift */,
+				943ABD9422781F0200B7F07C /* ThemeControllerTests.swift */,
+				943ABD9322781F0200B7F07C /* ThemeStoreTests.swift */,
+				982DA8D521FFAC0D00E2A51B /* TwitterManagerTests.swift */,
 			);
 			path = CriticalMassTests;
 			sourceTree = "<group>";
@@ -1340,6 +1343,7 @@
 				9843FAA3236CDC0D00457930 /* NetworkOperatorTests.swift in Sources */,
 				9843FAA5236CDC6E00457930 /* MockNetworkDataProvider.swift in Sources */,
 				98329A2322D3CADB00A157EE /* KeychainHelperTests.swift in Sources */,
+				94AF230F23D724D900267E87 /* NextRideManagerTests.swift in Sources */,
 				9804179021FCA2B40077D419 /* ChatManagerTests.swift in Sources */,
 				98ED2FDD22919BDD007F8A92 /* FriendsVerificationControllerTests.swift in Sources */,
 				982DA8D621FFAC0D00E2A51B /* TwitterManagerTests.swift in Sources */,
