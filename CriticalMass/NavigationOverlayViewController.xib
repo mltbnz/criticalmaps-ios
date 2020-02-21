@@ -21,16 +21,16 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z1D-zv-rB9" customClass="OverlayView" customModule="CriticalMaps" customModuleProvider="target">
-                    <rect key="frame" x="20" y="802" width="374" height="60"/>
+                    <rect key="frame" x="15" y="802" width="384" height="60"/>
                     <subviews>
-                        <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pXv-PO-PNq">
-                            <rect key="frame" x="0.0" y="0.0" width="374" height="60"/>
+                        <visualEffectView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pXv-PO-PNq">
+                            <rect key="frame" x="0.0" y="0.0" width="384" height="60"/>
                             <view key="contentView" opaque="NO" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="jZu-ap-yVB">
-                                <rect key="frame" x="0.0" y="0.0" width="374" height="60"/>
+                                <rect key="frame" x="0.0" y="0.0" width="384" height="60"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="oU1-hk-KIx">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="60"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="384" height="60"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                 <real key="value" value="0.0"/>
@@ -45,6 +45,11 @@
                                     <constraint firstItem="oU1-hk-KIx" firstAttribute="leading" secondItem="jZu-ap-yVB" secondAttribute="leading" id="Uow-ff-Grc"/>
                                     <constraint firstAttribute="bottom" secondItem="oU1-hk-KIx" secondAttribute="bottom" id="iaz-uu-h5S"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </view>
                             <blurEffect style="regular"/>
                             <userDefinedRuntimeAttributes>
@@ -78,8 +83,8 @@
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="z1D-zv-rB9" secondAttribute="trailing" constant="20" id="5zR-oT-2kj"/>
-                <constraint firstItem="z1D-zv-rB9" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="APA-qX-TB1"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="z1D-zv-rB9" secondAttribute="trailing" constant="15" id="5zR-oT-2kj"/>
+                <constraint firstItem="z1D-zv-rB9" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="APA-qX-TB1"/>
                 <constraint firstItem="z1D-zv-rB9" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="meH-ub-1mm"/>
                 <constraint firstItem="z1D-zv-rB9" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="r3L-Cy-cIf"/>
             </constraints>
