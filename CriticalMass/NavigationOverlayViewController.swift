@@ -36,11 +36,7 @@ struct NavigationOverlayItem {
 
 class NavigationOverlayViewController: UIViewController, IBConstructable {
     @IBOutlet private var overlayStackView: UIStackView!
-    @IBOutlet private var overlayContainerView: OverlayView! {
-        didSet {
-            overlayContainerView.layer.shadow = .default
-        }
-    }
+    @IBOutlet private var overlayContainerView: UIView!
 
     private let items: [NavigationOverlayItem]
 
@@ -57,6 +53,12 @@ class NavigationOverlayViewController: UIViewController, IBConstructable {
         super.viewDidLoad()
         configure(items: items)
         view.accessibilityTraits.insert(.tabBar)
+    }
+
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        guard overlayContainerView.shadow != nil else { return }
+        overlayContainerView.shadow = .default
     }
 
     private func configure(items: [NavigationOverlayItem]) {
