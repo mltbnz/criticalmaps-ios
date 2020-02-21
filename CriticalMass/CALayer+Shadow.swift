@@ -9,41 +9,12 @@
 import UIKit
 
 extension CALayer {
-    func setupMapOverlayConfiguration() {
-        shadowColor = UIColor.black.cgColor
-        shadowRadius = 4
-        shadowOpacity = 0.2
-        shadowOffset = CGSize(width: 0, height: 2)
-    }
-}
-
-extension CALayer {
     var shadow: Shadow? {
         set(newValue) {
-            shadowColor = UIColor.systemPink.cgColor
-            shadowRadius = 4
-            shadowOpacity = 0.9
-            shadowOffset = CGSize(width: 0, height: 8)
-//            let mask = CAShapeLayer()
-//            mask.path = UIBezierPath(
-//                roundedRect: bounds,
-//                cornerRadius: layer.cornerRadius
-//            ).cgPath
-//            layer.mask = mask
-//
-//            let shadowLayer = CAShapeLayer()
-//            shadowLayer.frame = frame
-//            shadowLayer.path = UIBezierPath(
-//                roundedRect: bounds,
-//                cornerRadius: layer.cornerRadius
-//            ).cgPath
-//            shadowLayer.shadowColor = newValue?.color.cgColor
-//            shadowLayer.shadowOpacity = 1
-//            shadowLayer.shadowRadius = 5
-//            shadowLayer.masksToBounds = false
-//            shadowLayer.shadowOffset = .zero
-//
-//            layer.addSublayer(shadowLayer)
+            shadowColor = newValue?.color.cgColor
+            shadowRadius = newValue?.radius ?? 0.0
+            shadowOpacity = newValue?.opacity ?? 0.0
+            shadowOffset = newValue?.offset ?? .zero
         }
         get {
             guard let color = shadowColor else { return nil }
@@ -66,8 +37,8 @@ struct Shadow {
 
 extension Shadow {
     static let `default` = Shadow(
-        color: .systemPink,
-        opacity: 0.9,
+        color: .black,
+        opacity: 0.2,
         radius: 4.0,
         offset: CGSize(width: 0, height: 2)
     )
