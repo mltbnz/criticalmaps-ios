@@ -40,7 +40,7 @@ class MapInfoView: UIView, IBConstructable {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        layer.setupMapOverlayConfiguration()
+        layer.shadow = .default
         label.isAccessibilityElement = false
         label.adjustsFontForContentSizeCategory = true
     }

@@ -8,18 +8,6 @@
 
 import UIKit
 
-extension UIView {
-    @IBInspectable
-    var cornerRadius: CGFloat {
-        get {
-            layer.cornerRadius
-        }
-        set {
-            layer.cornerRadius = newValue
-        }
-    }
-}
-
 @IBDesignable
 class RoundableImageView: UIImageView {
     @IBInspectable var borderColor: UIColor = UIColor.clear {
@@ -69,10 +57,7 @@ class RoundableImageView: UIImageView {
         innerShadow.shadowPath = path.cgPath
         innerShadow.masksToBounds = true
         // Shadow properties
-        innerShadow.shadowColor = UIColor.twitterProfileInnerBorder.cgColor
-        innerShadow.shadowOffset = .zero
-        innerShadow.shadowOpacity = 1.0
-        innerShadow.shadowRadius = 0.0
+        innerShadow.shadow = .innerShadow
         // Add
         layer.addSublayer(innerShadow)
     }

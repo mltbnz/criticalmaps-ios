@@ -38,7 +38,7 @@ class NavigationOverlayViewController: UIViewController, IBConstructable {
     @IBOutlet private var overlayStackView: UIStackView!
     @IBOutlet private var overlayContainerView: OverlayView! {
         didSet {
-            overlayContainerView.shadow = .default
+            overlayContainerView.layer.shadow = .default
         }
     }
 
