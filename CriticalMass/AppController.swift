@@ -80,10 +80,7 @@ class AppController {
                   action: .navigation(viewController: getSettingsViewController),
                   accessibilityIdentifier: "Settings"),
         ])
-        mapViewController.addChild(navigationOverlay)
-        mapViewController.view.addSubview(navigationOverlay.view)
-        navigationOverlay.didMove(toParent: mapViewController)
-
+        mapViewController.navigationOverlayViewController = navigationOverlay
         return mapViewController
     }()
 

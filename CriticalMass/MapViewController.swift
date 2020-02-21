@@ -13,6 +13,7 @@ class MapViewController: UIViewController {
     private let friendsVerificationController: FriendsVerificationController
     private var tileRenderer: MKTileOverlayRenderer?
     private let nextRideHandler: CMInApiHandling
+    var navigationOverlayViewController: NavigationOverlayViewController!
 
     init(
         themeController: ThemeController,
@@ -59,6 +60,7 @@ class MapViewController: UIViewController {
         super.viewDidLoad()
 
         title = String.mapTitle
+
         configureNotifications()
         configureTileRenderer()
         configureMapView()
@@ -67,6 +69,9 @@ class MapViewController: UIViewController {
         annotationController
             .map { $0.annotationViewType }
             .forEach(mapView.register)
+
+        add(navigationOverlayViewController)
+        layout(navigationOverlayViewController)
 
         setNeedsStatusBarAppearanceUpdate()
     }
