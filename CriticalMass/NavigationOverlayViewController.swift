@@ -112,13 +112,15 @@ class NavigationOverlayViewController: UIViewController, IBConstructable {
 private extension UIStackView {
     func addHorizontalSeparators() {
         var viewCount = arrangedSubviews.count
-        while viewCount >= 0 {
-            insertArrangedSubview(createSeparator(), at: viewCount)
+        while viewCount > 0 {
+            if viewCount != arrangedSubviews.count {
+                insertArrangedSubview(createVerticalSeparator(), at: viewCount)
+            }
             viewCount -= 1
         }
     }
 
-    private func createSeparator() -> UIView {
+    private func createVerticalSeparator() -> UIView {
         let separator = SeparatorView()
         separator.widthAnchor.constraint(equalToConstant: 1).isActive = true
         return separator
