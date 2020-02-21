@@ -85,6 +85,8 @@
 		94CF088319BDEAF2009FFF43 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 94CF088119BDEAF2009FFF43 /* InfoPlist.strings */; };
 		94D4016F229F20F6001524CC /* FontMetrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D4016E229F20F6001524CC /* FontMetrics.swift */; };
 		94D40171229FE43C001524CC /* UIFont+DynamicFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D40170229FE43C001524CC /* UIFont+DynamicFont.swift */; };
+		94E18F4123FE72DE000CD171 /* NavigationOverlayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94E18F4023FE72DE000CD171 /* NavigationOverlayViewController.xib */; };
+		94E18F4523FEAE0A000CD171 /* PassthroughView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E18F4423FEAE0A000CD171 /* PassthroughView.swift */; };
 		94FCBD28226C57CA00F93F94 /* UITableViewController+FooterSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FCBD23226C57CA00F93F94 /* UITableViewController+FooterSize.swift */; };
 		94FCBD29226C57CA00F93F94 /* Notification+Static.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FCBD24226C57CA00F93F94 /* Notification+Static.swift */; };
 		94FCBD2A226C57CA00F93F94 /* UIWindow+Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FCBD25226C57CA00F93F94 /* UIWindow+Appearance.swift */; };
@@ -305,6 +307,8 @@
 		94CF088219BDEAF2009FFF43 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		94D4016E229F20F6001524CC /* FontMetrics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontMetrics.swift; sourceTree = "<group>"; };
 		94D40170229FE43C001524CC /* UIFont+DynamicFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+DynamicFont.swift"; sourceTree = "<group>"; };
+		94E18F4023FE72DE000CD171 /* NavigationOverlayViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NavigationOverlayViewController.xib; sourceTree = "<group>"; };
+		94E18F4423FEAE0A000CD171 /* PassthroughView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassthroughView.swift; sourceTree = "<group>"; };
 		94E1FE4A212057AC0016BD4E /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		94E1FE4B212057AC0016BD4E /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
 		94E1FE4C212057AC0016BD4E /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -652,6 +656,7 @@
 				9841B475237E9229000A4922 /* Map */,
 				982DA8D92203842D00E2A51B /* SettingsViewController.swift */,
 				985E94B8220796CB00AA991B /* NavigationOverlayViewController.swift */,
+				94E18F4023FE72DE000CD171 /* NavigationOverlayViewController.xib */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -678,6 +683,7 @@
 				987C57A523A4EAF80060499B /* MapInfoView.xib */,
 				94829426238AA39C00338E7F /* MKMapView+Register.swift */,
 				94A95EB22287F81100FD5FDB /* NoContentMessageLabel.swift */,
+				94E18F4423FEAE0A000CD171 /* PassthroughView.swift */,
 				98003D5C22872E4300592D55 /* QRCodeView.swift */,
 				949BEF542237CAEC009AE6DF /* RoundableImageView.swift */,
 				3F749B2A236C6B9A00C4A125 /* RuleDescriptionLabel.swift */,
@@ -1101,6 +1107,7 @@
 				946CDE0422412DA60059F892 /* Settings.bundle in Resources */,
 				9489D88C1B768274001E746C /* Localizable.strings in Resources */,
 				987C57AB23A4EB290060499B /* BlurryFullscreenOverlayView.xib in Resources */,
+				94E18F4123FE72DE000CD171 /* NavigationOverlayViewController.xib in Resources */,
 				94CF087219BDEAF2009FFF43 /* Images.xcassets in Resources */,
 				98AAD0902337FF90001519C7 /* ManageFriendsViewController.xib in Resources */,
 				98E7339022039665005F311F /* SettingsInfoTableViewCell.xib in Resources */,
@@ -1299,6 +1306,7 @@
 				9804176D21FC87960077D419 /* SendChatMessage.swift in Sources */,
 				987C57AD23A941A60060499B /* CALayer+Shadow.swift in Sources */,
 				987C57AA23A4EB290060499B /* BlurryFullscreenOverlayView.swift in Sources */,
+				94E18F4523FEAE0A000CD171 /* PassthroughView.swift in Sources */,
 				946D71CF23C9CB7E0094D71B /* NextRideRequest.swift in Sources */,
 				940643D62307266700AB1BCB /* PostLocationAndChatMessagesRequest.swift in Sources */,
 				210367BC237AAE2F001F2A84 /* PathObserver.swift in Sources */,
