@@ -38,12 +38,18 @@ extension UIView {
 extension UIView {
     @IBInspectable
     var cornerRadius: CGFloat {
-        get {
-            layer.cornerRadius
-        }
+        get { layer.cornerRadius }
+        set { layer.cornerRadius = newValue }
+    }
+
+    var shadow: Shadow? {
         set {
-            layer.cornerRadius = newValue
-            layer.masksToBounds = newValue > 0
+            layer.shadowPath = UIBezierPath(
+                roundedRect: bounds,
+                cornerRadius: layer.cornerRadius
+            ).cgPath
+            layer.shadow = newValue
         }
+        get { layer.shadow }
     }
 }
