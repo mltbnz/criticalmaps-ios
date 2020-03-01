@@ -1,0 +1,6 @@
+- name: First interaction
+  uses: actions/first-interaction@v1.0.0
+  with:
+    repo-token: ${{ secrets.GITHUB_TOKEN }}
+    issue-message: '# Thanks for submitting an issue'
+    pr-message: '# Thank you for this contribution to the codebaese.'
