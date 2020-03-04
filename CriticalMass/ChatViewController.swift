@@ -17,9 +17,9 @@ class ChatViewController: UIViewController {
         static let chatInputHeight: CGFloat = 180
     }
 
-    private let messagesTableViewController = MessagesTableViewController<ChatMessageTableViewCell>(style: .plain)
+    @UseAutoLayoutViewController private var messagesTableViewController = MessagesTableViewController<ChatMessageTableViewCell>(style: .plain)
+    @UseAutoLayoutViewController private var chatInputViewController = ChatInputViewController.fromNib()
     private let chatManager: ChatManager
-    private let chatInputViewController = ChatInputViewController.fromNib()
     private lazy var chatInputBottomConstraint = {
         NSLayoutConstraint(item: chatInputViewController.view!, attribute: .bottom, relatedBy: .equal, toItem: view, attribute: .bottom, multiplier: 1, constant: 0)
     }()
@@ -76,8 +76,6 @@ class ChatViewController: UIViewController {
         }
 
         add(messagesTableViewController)
-        messagesTableViewController.view.translatesAutoresizingMaskIntoConstraints = false
-
         view.addConstraints([
             NSLayoutConstraint(item: messagesTableViewController.view!, attribute: .top, relatedBy: .equal, toItem: view, attribute: .topMargin, multiplier: 1, constant: 0),
             messagesTableViewController.view!.widthAnchor.constraint(equalTo: view.widthAnchor),
@@ -88,7 +86,6 @@ class ChatViewController: UIViewController {
 
     private func configureChatInput() {
         chatInputViewController.delegate = self
-        chatInputViewController.view.translatesAutoresizingMaskIntoConstraints = false
         add(chatInputViewController)
 
         view.addConstraints([

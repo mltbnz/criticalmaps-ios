@@ -11,9 +11,7 @@ class RulesDetailViewController: UIViewController {
     private var rule: Rule
     private let spacing: CGFloat = 12
 
-    private lazy var scrollView: UIScrollView = {
-        UIScrollView()
-    }()
+    @UseAutoLayoutView private var scrollView = UIScrollView()
 
     private lazy var ruleStack: UIStackView = {
         let view = UIStackView(arrangedSubviews: [ruleImageView, descriptionLabel])
@@ -78,7 +76,6 @@ class RulesDetailViewController: UIViewController {
 
     private func configureConstraints() {
         view.addSubview(scrollView)
-        scrollView.translatesAutoresizingMaskIntoConstraints = false
 
         // Constraints for scroll view
         NSLayoutConstraint.activate([

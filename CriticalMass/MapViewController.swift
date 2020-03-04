@@ -49,11 +49,7 @@ class MapViewController: UIViewController {
 
     private var mapView = MKMapView(frame: .zero)
 
-    private let gpsDisabledOverlayView: BlurryFullscreenOverlayView = {
-        let view = BlurryFullscreenOverlayView.fromNib()
-        view.translatesAutoresizingMaskIntoConstraints = false
-        return view
-    }()
+    @UseAutoLayoutView private var gpsDisabledOverlayView = BlurryFullscreenOverlayView.fromNib()
 
     override func viewDidLoad() {
         super.viewDidLoad()
