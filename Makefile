@@ -1,10 +1,10 @@
 all: bootstrap
 
-bootstrap: dependencies
+bootstrap: dependencies hooks
 
 dependencies:
 	$(shell ./update_dependencies.sh run_swiftformat)
 	$(shell ./update_dependencies.sh run_license_plist)
 
 hooks:
-	mv ./hooks/pre-push ./.git/hooks/pre-push
+	cp ./hooks/pre-push ./.git/hooks/pre-push
